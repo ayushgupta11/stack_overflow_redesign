@@ -27,6 +27,9 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+.option-container{
+    align-items: center;
+}
 .option-container a{
     color: #848d95;
     text-decoration: none;
@@ -48,6 +51,10 @@ body{
 .tabs-container div{
     padding: 15px;
 }
+.user{
+    width: 30px;
+    height: 30px;
+}
 .active{
     border-bottom: 4px solid orange;
 }
@@ -68,11 +75,11 @@ body{
     right: 30px;
 }
 .page{
-    background: white;
-    margin: 40px;
+    margin: 30px;
     flex-grow: 1;
 }
 .questions-tab{
+    background: white;
     box-shadow: 0 1px 0 rgba(12,13,14,0.1), 0 1px 6px rgba(59,64,69,0.1);
     padding: 10px 0;
     flex-grow: 1;
@@ -109,4 +116,60 @@ body{
 }
 .right div{
     margin-right: 20px;
+}
+.jobs-section{
+    margin: 10px 30px;
+}
+.checkbox i{
+    position: relative;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+    left: -13px;
+}
+.job{
+    padding: 20px;
+    border-left: 2px solid;
+}
+.job-title{
+    font-size: 20px;
+    color: #5EB7F1;
+}
+.job-location{
+    margin-top: 5px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+@media screen and (max-width: 768px) {
+    .bottom-nav{
+        display: none;
+    }
+    .page{
+        flex-direction: column;
+    }
+    .option-container{
+        display: none;
+    }
+    .top-nav{
+        justify-content: center;
+        padding: 10px;
+    }
+    .question-tags{
+        display: none;
+    }
+    .page{
+        margin: 10px;
+    }
+    .jobs-section{
+        flex-grow: 1;
+    }
+    .job{
+        flex-grow: 1;
+        align-items: center;
+    }
+    .nav{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
